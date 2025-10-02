@@ -1,5 +1,5 @@
 # Running Docker
-docker run -d --name prometheus -p 9090:9090 -v /home/prometheus-monitoring:/etc/prometheus/promethus.yml prom/prometheus
+docker run -d --name prometheus -p 9090:9090 -v /home/prometheus-monitoring/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
 
 # Running Grafana
 docker run -d --name grafana -p 3000:3000 grafana/grafana (admin, admin)
